@@ -1,0 +1,188 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 0 10px;
+}
+body::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(Images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    margin-right: 15%;
+    width: 400px;
+    border: 2px solid white;
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+h3{
+    width: 100%;
+    font-size: 35px;
+    color: #fff;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid white;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.email input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.email label{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    transform: translate(0,-120%);
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+.email input:focus~label,
+.email input:valid~label{
+    font-size: 0.9em;
+    translate: 0 -25px;
+}
+.pass{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid white;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pass input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.pass label{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    transform: translate(0,-120%);
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+.pass input:focus~label,
+.pass input:valid~label{
+    font-size: 0.9em;
+    translate: 0 -25px;
+}
+.cnfpass{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid white;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.cnfpass input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.cnfpass label{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    transform: translate(0,-120%);
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+.cnfpass input:focus~label,
+.cnfpass input:valid~label{
+    font-size: 0.9em;
+    translate: 0 -25px;
+}
+.sendOTP{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    transition: 0.6s ease;
+}
+.cnf_email{
+    display: none;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.OTP{
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+.cnf_OTP{
+    width: 30%;
+}
+.OTP input{
+    height: 25px;
+    width: 10%;
+    text-align: center;
+    font-size: 17px;
+}
+.verified{
+    color: #4ccc4e;
+    display: none;
+    justify-content: end;
+    align-items: center;
+}
+.container a{
+    text-decoration: none;
+    color: #fff;
+}
+.container a:hover{
+    text-decoration: underline;
+    color: #d3cfcf;
+}
+.Remember{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#submit{
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+}
+.log_in{
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    margin: 20px;
+}
